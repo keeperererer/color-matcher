@@ -15,7 +15,7 @@ import { TableDataRow, TransformedData } from "./interface";
 
 function transformTableData(tableData: TableDataRow[]): TransformedData[] {
   return tableData.map(row => ({
-    hex: `#${row[0]}`,
+    hex: row[0],
     MARD: row[1],
     漫漫: row[2],
     小舞: row[3],
